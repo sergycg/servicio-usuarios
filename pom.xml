@@ -69,7 +69,7 @@
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 
-		
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
@@ -97,4 +97,12 @@
 		</plugins>
 	</build>
 
+	<repositories>
+		<!--other repositories if any -->
+		<repository>
+			<id>project.local</id>
+			<name>project</name>
+			<url>file:${project.basedir}/repo</url>
+		</repository>
+	</repositories>
 </project>
